@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a {
+            display:flex;
+            flex-direction: row;
+        }
+        .a > div{
+            height: 200px;
+            width: 200px;
+            margin: 5px;
+        }
+        @media screen and (min-width:850px){
+            .b {
+                background-color: black;
+            }
+        }
+        @media screen and (min-width:790px) {
+            .c{
+                background-color: blueviolet;
+            }
+        }
+        @media screen and (min-width:600px) {
+            .d{
+                background-color: red;
+            }
+        }
+        @media screen and (min-width:500px) {
+            .e{
+                background-color: rgb(17, 82, 82);
+            }
+        }
+    </style>
+</head>
+<body>
+        <h1>Mise en page réactive à quantre colonnes </h1>
+          <p><b>Redimenstion la fenétre du navigateur pour voir l'effet réactif</b>sur les écrans d'une largeur inférieure </p>
+    <div class="a">       
+             <div class="b">
+                <h1>Colonne 1</h1>
+                <p>Un peu de text ...</p>
+             </div>
+             <div class="c">
+                <h1>Colonne 2</h1>
+                <p>Un peu de text ...</p>
+             </div>
+             <div class="d">
+                <h1>Colonne 3</h1>
+                <p>Un peu de text ...</p>
+             </div>
+             <div class="e">
+                <h1>Colonne 4</h1>
+                <p>Un peu de text ...</p>
+             </div>
+    </div>
+</body>
+</html>
